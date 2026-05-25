@@ -348,12 +348,12 @@ export default function Home() {
 
   {/* FIRST NAME */}
   <h3 className="font-[family-name:var(--font-cinzel)] text-3xl md:text-5xl font-black text-[#f5c15c] leading-tight">
-    ज्योतिष आचार्य पंडित पुराण शर्मा
+    पंडित पुराण शर्मा ज्योतिष आचार्य
   </h3>
   
 
   <p className="text-2xl text-yellow-100 font-semibold mb-10">
-    आचार्य कर्मकांड एवं ज्योतिष विशेषज्ञ
+    ज्योतिष आचार्य एवं आचार्य कर्मकांड
   </p>
 
   {/* Divider */}
@@ -361,7 +361,7 @@ export default function Home() {
 
   {/* SECOND NAME */}
   <h3 className="font-[family-name:var(--font-cinzel)] text-3xl md:text-5xl font-black text-[#f5c15c] leading-tight">
-    ज्योतिष विशेषज्ञ पंडित रवि जोशी
+    पंडित रवि जोशी आचार्य कर्मकांड
   </h3>
 
   <p className="text-2xl text-yellow-100 font-semibold mb-10">
