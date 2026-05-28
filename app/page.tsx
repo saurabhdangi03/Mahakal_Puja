@@ -298,6 +298,23 @@ export default function Home() {
               <option className="text-black">
                 Mahamrityunjay
               </option>
+
+              <option className="text-black">
+                 Kumbh/Ark Vivah
+              </option>
+
+              <option className="text-black">
+                Mangal Bhat Puja
+              </option>
+
+              <option className="text-black">
+                Guru Chandal Dosh
+              </option>
+
+              <option className="text-black">
+                Angarak Dosh
+              </option>
+
             </select>
 
             {/* BUTTON */}
@@ -348,7 +365,7 @@ export default function Home() {
 
   {/* FIRST NAME */}
   <h3 className="font-[family-name:var(--font-cinzel)] text-3xl md:text-5xl font-black text-[#f5c15c] leading-tight">
-    पंडित पुराण शर्मा ज्योतिष आचार्य
+    ज्योतिष आचार्य पंडित पुराण शर्मा
   </h3>
   
 
@@ -690,7 +707,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-10 text-center mt-24 border-t border-white/20 pt-16">
             <div>
               <h4 className="text-7xl text-yellow-400 font-black mb-3">
-                35+
+                10+
               </h4>
               <p className="text-2xl font-semibold">YEARS EXPERIENCE</p>
             </div>
