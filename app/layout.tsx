@@ -72,18 +72,20 @@ export default function RootLayout({
         ${poppins.variable}
         h-full
         antialiased
+        overflow-x-hidden
       `}
     >
-      <body
-        className={`
-          min-h-full
-          flex
-          flex-col
-          bg-[#0b0b0b]
-          text-white
-          font-[family-name:var(--font-poppins)]
-        `}
-      >
+    <body
+  className={`
+    min-h-full
+    flex
+    flex-col
+    bg-[#0b0b0b]
+    text-white
+    font-[family-name:var(--font-poppins)]
+    overflow-x-hidden
+  `}
+>
         {children}
       </body>
     </html>

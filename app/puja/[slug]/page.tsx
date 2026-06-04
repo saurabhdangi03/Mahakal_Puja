@@ -328,7 +328,7 @@ export default function Page() {
   }
 
   return (
-    <main className="bg-[#060606] text-white">
+    <main className="bg-[#060606] text-white overflow-x-hidden w-full">
       {/* NAVBAR */}
       <Header showFaq={false} />
 
@@ -355,7 +355,7 @@ export default function Page() {
         <div className="absolute top-20 left-20 w-96 h-96 bg-yellow-500/20 blur-[80px] rounded-full" />
         <div className="absolute bottom-10 right-10 w-96 h-96 bg-red-500/20 blur-[80px] rounded-full" />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
           {/* LEFT */}
           <motion.div
             initial={{ opacity: 0, x: -80 }}
@@ -400,37 +400,34 @@ export default function Page() {
           </div>
 
             {/* STATS */}
-            <div className="grid grid-cols-3 gap-5 mt-14">
-              <div className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-6 text-center">
-                <h3 className="text-4xl font-black text-yellow-400">
-                  10+
-                </h3>
+           <div className="grid grid-cols-3 gap-3 md:gap-5 mt-10 md:mt-14">
+          <div className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-3 md:p-6 text-center">
+            <h3 className="text-3xl md:text-4xl font-black text-yellow-400">
+              10+
+            </h3>
+            <p className="text-sm md:text-base text-gray-300 mt-2">
+              Years Experience
+            </p>
+          </div>
 
-                <p className="text-gray-300 mt-2">
-                  Years Experience
-                </p>
-              </div>
+          <div className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-3 md:p-6 text-center">
+            <h3 className="text-3xl md:text-4xl font-black text-yellow-400">
+              10K+
+            </h3>
+            <p className="text-sm md:text-base text-gray-300 mt-2">
+              Happy Devotees
+            </p>
+          </div>
 
-              <div className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-6 text-center">
-                <h3 className="text-4xl font-black text-yellow-400">
-                  10K+
-                </h3>
-
-                <p className="text-gray-300 mt-2">
-                  Happy Devotees
-                </p>
-              </div>
-
-              <div className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-6 text-center">
-                <h3 className="text-4xl font-black text-yellow-400">
-                  100%
-                </h3>
-
-                <p className="text-gray-300 mt-2">
-                  Vedic Vidhi
-                </p>
-              </div>
-            </div>
+          <div className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-3 md:p-6 text-center">
+            <h3 className="text-3xl md:text-4xl font-black text-yellow-400">
+              100%
+            </h3>
+            <p className="text-sm md:text-base text-gray-300 mt-2">
+              Vedic Vidhi
+            </p>
+          </div>
+          </div>
           </motion.div>
 
           {/* RIGHT CARD */}
