@@ -333,7 +333,8 @@ export default function Page() {
       <Header showFaq={false} />
 
       {/* HERO SECTION */}
-      <section className="relative min-h-screen flex items-center overflow-hidden">
+      <section className="relative min-h-[auto] md:min-h-screen flex items-center overflow-hidden py-12 md:py-24">
+        
         {/* BG IMAGE */}
         <div className="absolute inset-0">
           <Image
@@ -354,7 +355,7 @@ export default function Page() {
         <div className="absolute top-20 left-20 w-96 h-96 bg-yellow-500/20 blur-[80px] rounded-full" />
         <div className="absolute bottom-10 right-10 w-96 h-96 bg-red-500/20 blur-[80px] rounded-full" />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
           {/* LEFT */}
           <motion.div
             initial={{ opacity: 0, x: -80 }}
@@ -362,7 +363,7 @@ export default function Page() {
             transition={{ duration: 1 }}
             viewport={{ amount: 0.2 }}
           >
-            <div className="inline-flex items-center gap-3 bg-yellow-400 text-black px-6 py-3 rounded-full font-black text-lg mt-8 mb-8 shadow-2xl">
+            <div className="inline-flex items-center gap-2 bg-yellow-400 text-black px-4 py-2 md:px-6 md:py-3 rounded-full font-black text-sm md:text-lg mt-6 mb-6 md:mb-8 shadow-2xl">
               <FaOm />
               Mahakal Nagari Ujjain
             </div>
@@ -371,32 +372,32 @@ export default function Page() {
               {puja.title}
             </h1>
 
-            <p className="text-2xl text-yellow-300 font-semibold mb-8">
+            <p className="text-lg md:text-lg md:text-2xl text-yellow-300 font-semibold mb-5 md:mb-8">
               {puja.subtitle}
             </p>
 
-            <p className="text-xl text-gray-300 leading-loose mb-10">
+            <p className="text-base md:text-xl text-gray-300 leading-relaxed md:leading-loose mb-8 md:mb-10">
               {puja.desc}
             </p>
 
-            <div className="flex flex-wrap gap-5">
-              <a
-                href="tel:7746894292"
-                className="bg-gradient-to-r from-red-600 to-orange-500 hover:scale-105 transition duration-300 text-white px-10 py-5 rounded-full text-xl font-bold flex items-center gap-3 shadow-2xl"
-              >
-                <FaPhoneAlt />
-                Call Now
-              </a>
+            <div className="flex flex-col sm:flex-row gap-4 md:gap-5">
+            <a
+              href="tel:7746894292"
+              className="bg-gradient-to-r from-red-600 to-orange-500 hover:scale-105 transition duration-300 text-white px-6 md:px-10 py-4 md:py-5 rounded-full text-base md:text-xl font-bold flex items-center justify-center gap-3 shadow-2xl"
+            >
+              <FaPhoneAlt />
+              Call Now
+            </a>
 
-              <a
-                href={`https://wa.me/917746894292?text=Namaste Pandit Ji, mujhe ${puja.title} ke baare mein jankari chahiye.`}
-                target="_blank"
-                className="bg-gradient-to-r from-green-500 to-emerald-600 hover:scale-105 transition duration-300 text-white px-10 py-5 rounded-full text-xl font-bold flex items-center gap-3 shadow-2xl"
-              >
-                <FaWhatsapp />
-                WhatsApp Now
-              </a>
-            </div>
+            <a
+              href={`https://wa.me/917746894292?text=Namaste Pandit Ji, mujhe ${puja.title} ke baare mein jankari chahiye.`}
+              target="_blank"
+              className="bg-gradient-to-r from-green-500 to-emerald-600 hover:scale-105 transition duration-300 text-white px-6 md:px-10 py-4 md:py-5 rounded-full text-base md:text-xl font-bold flex items-center justify-center gap-3 shadow-2xl"
+            >
+              <FaWhatsapp />
+              WhatsApp Now
+            </a>
+          </div>
 
             {/* STATS */}
             <div className="grid grid-cols-3 gap-5 mt-14">
@@ -452,43 +453,43 @@ export default function Page() {
               <input
                 type="text"
                 placeholder="Your Name"
-                className="w-full bg-black/40 border border-white/10 rounded-2xl px-5 py-5 outline-none text-lg"
+                className="w-full bg-black/40 border border-white/10 rounded-2xl px-4 md:px-5 py-4 md:py-5 outline-none text-base md:text-lg"
               />
 
               <input
                 type="text"
                 placeholder="Mobile Number"
-                className="w-full bg-black/40 border border-white/10 rounded-2xl px-5 py-5 outline-none text-lg"
+                className="w-full bg-black/40 border border-white/10 rounded-2xl px-4 md:px-5 py-4 md:py-5 outline-none text-base md:text-lg"
               />
 
               <input
                 type="text"
                 placeholder="City"
-                className="w-full bg-black/40 border border-white/10 rounded-2xl px-5 py-5 outline-none text-lg"
+                className="w-full bg-black/40 border border-white/10 rounded-2xl px-4 md:px-5 py-4 md:py-5 outline-none text-base md:text-lg"
               />
 
-              <button className="w-full bg-gradient-to-r from-yellow-400 via-orange-500 to-red-600 py-5 rounded-2xl text-2xl font-black hover:scale-[1.02] transition duration-300 shadow-2xl">
+              <button className="w-full bg-gradient-to-r from-yellow-400 via-orange-500 to-red-600 py-4 md:py-5 rounded-2xl text-lg md:text-lg md:text-2xl font-black hover:scale-[1.02] transition duration-300 shadow-2xl">
                 Get Details on WhatsApp
               </button>
             </div>
 
             <div className="mt-10 space-y-5">
               <div className="flex items-center gap-4">
-                <FaCheckCircle className="text-green-400 text-2xl" />
+                <FaCheckCircle className="text-green-400 text-lg md:text-2xl" />
                 <p className="text-lg">
                   Same Day Booking Available
                 </p>
               </div>
 
               <div className="flex items-center gap-4">
-                <FaCheckCircle className="text-green-400 text-2xl" />
+                <FaCheckCircle className="text-green-400 text-lg md:text-2xl" />
                 <p className="text-lg">
                   Video Call Puja Option
                 </p>
               </div>
 
               <div className="flex items-center gap-4">
-                <FaCheckCircle className="text-green-400 text-2xl" />
+                <FaCheckCircle className="text-green-400 text-lg md:text-2xl" />
                 <p className="text-lg">
                   Experienced Pandit Ji
                 </p>
@@ -499,10 +500,10 @@ export default function Page() {
       </section>
 
       {/* MAIN CONTENT */}
-      <section className="py-24 relative">
+      <section className="py-14 md:py-24 relative">
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_top,rgba(255,180,0,0.08),transparent_40%)]" />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-10">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-3 gap-8 md:gap-10">
           {/* LEFT */}
           <div className="lg:col-span-2 space-y-10">
             {/* ABOUT */}
@@ -513,20 +514,20 @@ export default function Page() {
               viewport={{ once: true }}
               className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-[35px] p-6 md:p-10"
             >
-              <h2 className="text-3xl md:text-5xl font-black text-yellow-400 mb-6 md:mb-8">
+              <h2 className="text-3xl md:text-4xl font-black text-center text-yellow-400 mb-5 md:mb-6">
                 🕉️ {puja.title} Kya Hai?
               </h2>
 
-              <p className="text-xl leading-loose text-gray-300 mb-8">
+              <p className="text-lg md:text-xl leading-loose text-gray-300 mb-8">
                 {puja.whatIs}
               </p>
 
-              <p className="text-xl leading-loose text-gray-400">
+              <p className="text-base md:text-xl leading-relaxed md:leading-loose text-gray-400">
                 {puja.desc}
               </p>
 
               <div className="mt-10 bg-gradient-to-r from-yellow-500/20 to-red-500/20 border border-yellow-500/30 rounded-3xl p-6">
-                <p className="text-2xl font-bold text-yellow-300">
+                <p className="text-xl md:text-lg md:text-2xl font-bold text-yellow-300">
                   👉 Yeh Puja jeevan ki badha aur grah dosh
                   nivaran ke liye bahut prabhavi mani jati hai.
                 </p>
@@ -541,7 +542,7 @@ export default function Page() {
               viewport={{ once: true }}
               className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-[35px] p-6 md:p-10"
             >
-              <h2 className="text-3xl md:text-5xl font-black text-yellow-400 mb-6 md:mb-8">
+              <h2 className="text-3xl md:text-4xl font-black text-center text-yellow-400 mb-5 md:mb-6">
                 💯 Puja Ke Fayde
               </h2>
 
@@ -553,7 +554,7 @@ export default function Page() {
                       key={index}
                       className="bg-black/30 border border-white/10 rounded-3xl p-6 flex items-start gap-4"
                     >
-                      <FaStar className="text-yellow-400 text-2xl mt-1" />
+                      <FaStar className="text-yellow-400 text-lg md:text-2xl mt-1" />
 
                       <p className="text-xl text-gray-200">
                         {item}
@@ -572,7 +573,7 @@ export default function Page() {
               viewport={{ once: true }}
               className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-[35px] p-6 md:p-10"
             >
-              <h2 className="text-3xl md:text-5xl font-black text-yellow-400 mb-6 md:mb-8">
+              <h2 className="text-3xl md:text-4xl font-black text-center text-yellow-400 mb-5 md:mb-6">
                 🪔 Puja Includes
               </h2>
 
@@ -588,7 +589,7 @@ export default function Page() {
                     >
                       <FaPrayingHands className="text-5xl text-yellow-400 mx-auto mb-5" />
 
-                      <h3 className="text-2xl font-bold">
+                      <h3 className="text-lg md:text-2xl font-bold">
                         {item}
                       </h3>
                     </motion.div>
@@ -605,7 +606,7 @@ export default function Page() {
               viewport={{ once: true }}
               className="bg-gradient-to-r from-red-900/30 to-orange-600/20 border border-red-500/20 rounded-[35px] p-6 md:p-10"
             >
-              <h2 className="text-3xl md:text-5xl font-black text-red-400 mb-6 md:mb-8">
+              <h2 className="text-3xl md:text-4xl font-black text-center text-red-400 mb-5 md:mb-6">
                 ⚠️ In Samasyaon Se Pareshan?
               </h2>
 
@@ -618,7 +619,7 @@ export default function Page() {
                     >
                       <div className="w-4 h-4 rounded-full bg-red-500" />
 
-                      <p className="text-2xl text-gray-200">
+                      <p className="text-lg md:text-2xl text-gray-200">
                         {item}
                       </p>
                     </div>
@@ -627,7 +628,7 @@ export default function Page() {
               </div>
 
               <div className="mt-10 bg-red-600 rounded-3xl p-6 text-center">
-                <p className="text-3xl font-black">
+                <p className="text-xl md:text-3xl font-black">
                   👉 {puja.title} ek prabhavi Vedic upay hai
                 </p>
               </div>
@@ -642,7 +643,7 @@ export default function Page() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
               viewport={{ once: true }}
-              className="sticky top-24 bg-gradient-to-b from-[#1a1a1a] to-black border border-yellow-500/20 rounded-[35px] p-8 shadow-2xl"
+              className="lg:sticky lg:top-24 bg-gradient-to-b from-[#1a1a1a] to-black border border-yellow-500/20 rounded-[28px] md:rounded-[35px] p-6 md:p-8 shadow-2xl"
             >
               <h3 className="text-4xl font-black text-yellow-400 mb-6">
                 📿 Book Now
@@ -655,7 +656,7 @@ export default function Page() {
               <a
                 href={`https://wa.me/917746894292?text=Namaste Pandit Ji, mujhe ${puja.title} book karni hai.`}
                 target="_blank"
-                className="flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 transition py-5 rounded-2xl text-2xl font-black mb-5"
+                className="flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 transition py-4 md:py-5 rounded-2xl text-lg md:text-2xl font-black mb-5"
               >
                 <FaWhatsapp />
                 WhatsApp Booking
@@ -663,7 +664,7 @@ export default function Page() {
 
               <a
                 href="tel:7746894292"
-                className="flex items-center justify-center gap-3 border-2 border-yellow-500 text-yellow-400 py-5 rounded-2xl text-2xl font-black"
+                className="flex items-center justify-center gap-3 border-2 border-yellow-500 text-yellow-400 py-4 md:py-5 rounded-2xl text-lg md:text-2xl font-black"
               >
                 <FaPhoneAlt />
                 Call Now
@@ -678,7 +679,7 @@ export default function Page() {
               viewport={{ once: true }}
               className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-[35px] overflow-hidden"
             >
-              <div className="bg-gradient-to-r from-yellow-500 to-red-600 p-5 text-black text-2xl font-black">
+              <div className="bg-gradient-to-r from-yellow-500 to-red-600 p-5 text-black text-lg md:text-2xl font-black">
                 🕉️ Other Services
               </div>
 
@@ -705,7 +706,7 @@ export default function Page() {
       </section>
 
       {/* FINAL CTA */}
-      <section className="py-24 bg-gradient-to-r from-black via-[#2b0000] to-black relative overflow-hidden">
+      <section className="py-14 md:py-24 bg-gradient-to-r from-black via-[#2b0000] to-black relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(255,180,0,0.15),transparent_50%)]" />
 
         <motion.div
@@ -719,7 +720,7 @@ export default function Page() {
             🔥 Aaj Hi Puja Book Karein
           </h2>
 
-          <p className="text-2xl text-gray-300 mb-12 leading-relaxed">
+          <p className="text-lg md:text-2xl text-gray-300 mb-12 leading-relaxed">
             Mahakal ki kripa se jeevan mein sukh, shanti aur
             safalta paayein.
           </p>
@@ -727,7 +728,7 @@ export default function Page() {
           <div className="flex flex-col md:flex-row justify-center gap-6">
             <a
               href="tel:7746894292"
-              className="bg-white text-black px-10 py-5 rounded-full text-2xl font-black flex items-center justify-center gap-3 hover:scale-105 transition duration-300"
+              className="bg-white text-black px-6 md:px-10 py-4 md:py-5 rounded-full text-lg md:text-2xl font-black flex items-center justify-center gap-3 hover:scale-105 transition duration-300"
             >
               <FaPhoneAlt />
               Call Pandit Ji
@@ -736,7 +737,7 @@ export default function Page() {
             <a
               href="https://wa.me/917746894292"
               target="_blank"
-              className="bg-green-600 px-10 py-5 rounded-full text-2xl font-black flex items-center justify-center gap-3 hover:scale-105 transition duration-300"
+              className="bg-green-600 px-6 md:px-10 py-4 md:py-5 rounded-full text-lg md:text-2xl font-black flex items-center justify-center gap-3 hover:scale-105 transition duration-300"
             >
               <FaWhatsapp />
               WhatsApp Now
@@ -747,11 +748,11 @@ export default function Page() {
 
       {/* FOOTER */}
       <footer className="bg-black border-t border-white/10 py-10 text-center">
-        <h3 className="text-3xl font-black text-yellow-400 mb-4">
+        <h3 className="text-xl md:text-3xl font-black text-yellow-400 mb-4">
           ज्योतिष आचार्य पंडित पुराण शर्मा
         </h3>
 
-        <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-loose px-6">
+        <p className="text-base md:text-2xl text-gray-300 mb-8 md:mb-12 leading-relaxed">
           विश्व प्रसिद्ध ज्योतिष एवं कर्मकांड विशेषज्ञ।
           महाकाल की पावन नगरी उज्जैन में वर्षों से वैदिक
           पूजा, अनुष्ठान एवं ग्रह दोष निवारण सेवाएं प्रदान
@@ -765,21 +766,21 @@ export default function Page() {
 
       {/* FLOATING BUTTONS */}
       <motion.a
-        whileHover={{ scale: 1.1 }}
-        href="tel:7746894292"
-        className="fixed bottom-6 left-6 bg-gradient-to-r from-red-600 to-orange-500 text-white w-20 h-20 rounded-full flex items-center justify-center text-3xl shadow-2xl z-50"
-      >
-        <FaPhoneAlt />
-      </motion.a>
+  whileHover={{ scale: 1.1 }}
+  href="tel:7746894292"
+  className="fixed bottom-5 left-4 md:left-6 bg-gradient-to-r from-red-600 to-orange-500 text-white w-14 h-14 md:w-20 md:h-20 rounded-full flex items-center justify-center text-2xl md:text-3xl shadow-2xl z-50"
+>
+  <FaPhoneAlt />
+</motion.a>
 
-      <motion.a
-        whileHover={{ scale: 1.1 }}
-        href="https://wa.me/917746894292"
-        target="_blank"
-        className="fixed bottom-6 right-6 bg-green-500 text-white w-20 h-20 rounded-full flex items-center justify-center text-4xl shadow-2xl z-50"
-      >
-        <FaWhatsapp />
-      </motion.a>
+<motion.a
+  whileHover={{ scale: 1.1 }}
+  href="https://wa.me/917746894292"
+  target="_blank"
+  className="fixed bottom-5 right-4 md:right-6 bg-green-500 text-white w-14 h-14 md:w-20 md:h-20 rounded-full flex items-center justify-center text-2xl md:text-4xl shadow-2xl z-50"
+>
+  <FaWhatsapp />
+</motion.a>
     </main>
   )
 }
