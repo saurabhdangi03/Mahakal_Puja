@@ -362,12 +362,12 @@ export default function Page() {
             transition={{ duration: 1 }}
             viewport={{ amount: 0.2 }}
           >
-            <div className="inline-flex items-center gap-3 bg-yellow-400 text-black px-6 py-3 rounded-full font-black text-lg mb-8 shadow-2xl">
+            <div className="inline-flex items-center gap-3 bg-yellow-400 text-black px-6 py-3 rounded-full font-black text-lg mt-8 mb-8 shadow-2xl">
               <FaOm />
               Mahakal Nagari Ujjain
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-black leading-tight mb-8 text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-orange-400 to-red-500">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-black leading-tight mb-6 md:mb-8 text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-orange-400 to-red-500">
               {puja.title}
             </h1>
 
@@ -438,7 +438,7 @@ export default function Page() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
-            className="bg-white/10 backdrop-blur-2xl border border-white/10 rounded-[40px] p-10 shadow-[0_0_60px_rgba(255,180,0,0.2)]"
+            className="bg-white/10 backdrop-blur-2xl border border-white/10 rounded-[40px] p-6 md:p-10 shadow-[0_0_60px_rgba(255,180,0,0.2)]"
           >
             <h2 className="text-4xl font-black text-center text-yellow-400 mb-6">
               🛕 Book Puja
@@ -511,9 +511,9 @@ export default function Page() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
               viewport={{ once: true }}
-              className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-[35px] p-10"
+              className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-[35px] p-6 md:p-10"
             >
-              <h2 className="text-5xl font-black text-yellow-400 mb-8">
+              <h2 className="text-3xl md:text-5xl font-black text-yellow-400 mb-6 md:mb-8">
                 🕉️ {puja.title} Kya Hai?
               </h2>
 
@@ -539,9 +539,9 @@ export default function Page() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
               viewport={{ once: true }}
-              className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-[35px] p-10"
+              className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-[35px] p-6 md:p-10"
             >
-              <h2 className="text-5xl font-black text-yellow-400 mb-10">
+              <h2 className="text-3xl md:text-5xl font-black text-yellow-400 mb-6 md:mb-8">
                 💯 Puja Ke Fayde
               </h2>
 
@@ -570,9 +570,9 @@ export default function Page() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
               viewport={{ once: true }}
-              className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-[35px] p-10"
+              className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-[35px] p-6 md:p-10"
             >
-              <h2 className="text-5xl font-black text-yellow-400 mb-10">
+              <h2 className="text-3xl md:text-5xl font-black text-yellow-400 mb-6 md:mb-8">
                 🪔 Puja Includes
               </h2>
 
@@ -603,9 +603,9 @@ export default function Page() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-r from-red-900/30 to-orange-600/20 border border-red-500/20 rounded-[35px] p-10"
+              className="bg-gradient-to-r from-red-900/30 to-orange-600/20 border border-red-500/20 rounded-[35px] p-6 md:p-10"
             >
-              <h2 className="text-5xl font-black text-red-400 mb-10">
+              <h2 className="text-3xl md:text-5xl font-black text-red-400 mb-6 md:mb-8">
                 ⚠️ In Samasyaon Se Pareshan?
               </h2>
 
@@ -715,7 +715,7 @@ export default function Page() {
           viewport={{ once: true }}
           className="relative z-10 max-w-5xl mx-auto px-6 text-center"
         >
-          <h2 className="text-5xl md:text-7xl font-black text-yellow-400 mb-8">
+          <h2 className="text-4xl sm:text-5xl md:text-7xl font-black leading-tight mb-6 md:mb-8 text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-orange-400 to-red-500">
             🔥 Aaj Hi Puja Book Karein
           </h2>
 

@@ -37,7 +37,7 @@ export default function Header({
         >
           <Link
             href="/"
-            className="text-3xl font-black tracking-wide bg-gradient-to-r from-yellow-300 via-orange-400 to-red-500 bg-clip-text text-transparent"
+            className="text-xl md:text-3xl font-black tracking-wide bg-gradient-to-r from-yellow-300 via-orange-400 to-red-500 bg-clip-text text-transparent"
           >
             🛕 Puja in Ujjain
           </Link>
@@ -78,7 +78,7 @@ export default function Header({
             boxShadow: '0px 0px 20px rgba(255,140,0,0.6)',
           }}
           whileTap={{ scale: 0.95 }}
-          className="rounded-full bg-gradient-to-r from-orange-500 to-red-600 px-6 py-3 font-bold text-white shadow-lg transition-all duration-300"
+          className="rounded-full bg-gradient-to-r from-orange-500 to-red-600 px-4 py-2 md:px-6 md:py-3 text-sm md:text-base font-bold text-white shadow-lg transition-all duration-300"
         >
           Book Puja
         </motion.a>

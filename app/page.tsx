@@ -179,7 +179,7 @@ export default function Home() {
             </span>
           </div>
 
-          <h1 className="font-[family-name:var(--font-cinzel)] text-5xl md:text-7xl leading-[1.1] tracking-tight font-black mb-8">
+          <h1 className="font-[family-name:var(--font-cinzel)] text-4xl sm:text-5xl md:text-7xl leading-tight tracking-tight font-black mb-6 md:mb-8">
             <span className="bg-gradient-to-r from-yellow-300 via-orange-400 to-red-500 bg-clip-text text-transparent">
               Book Authentic
             </span>
@@ -191,7 +191,7 @@ export default function Home() {
             </span>
           </h1>
 
-          <p className="text-xl md:text-2xl leading-relaxed text-gray-200 mb-10 max-w-2xl">
+          <p className="text-base sm:text-lg md:text-2xl leading-relaxed text-gray-200 mb-8 md:mb-10 max-w-2xl">
             Mangal Dosh, Kaal Sarp Puja, Rudrabhishek,
             Mahamrityunjay & More.
           </p>
@@ -228,10 +228,10 @@ export default function Home() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="bg-white/10 backdrop-blur-2xl rounded-[40px] p-10 shadow-2xl border border-white/10"
+          className="bg-white/10 backdrop-blur-2xl rounded-[28px] md:rounded-[40px] p-6 md:p-10 shadow-2xl border border-white/10"
         >
           <div className="text-center mb-8">
-            <div className="text-6xl mb-4">
+            <div className="text-3xl md:text-6xl mb-4">
               🛕
             </div>
 
@@ -396,13 +396,13 @@ export default function Home() {
         transition={{ duration: 1 }}
         viewport={{ once: true }}
         whileHover={{ y: -10 }}
-        className="bg-white/5 border border-yellow-500/20 backdrop-blur-2xl rounded-[40px] p-10 shadow-[0_0_50px_rgba(255,193,7,0.1)]"
+        className="bg-white/5 border border-yellow-500/20 backdrop-blur-2xl rounded-[40px] p-6 md:p-10 shadow-[0_0_50px_rgba(255,193,7,0.1)]"
       >
         <div className="w-24 h-24 rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 flex items-center justify-center text-5xl mb-8 shadow-2xl">
           🛕
         </div>
 
-        <h3 className="text-4xl font-black text-[#f5c15c] mb-6">
+        <h3 className="font-[family-name:var(--font-cinzel)] text-2xl md:text-4xl font-black text-[#f5c15c] mb-3">
           About Our Spiritual Mission
         </h3>
 
@@ -506,7 +506,7 @@ export default function Home() {
       {/* Services */}
       <section id="services" className="py-24 bg-[#0b0b0b] text-white">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className=" font-[family-name:var(--font-cinzel)] text-center text-6xl font-black text-[#f5c15c] ">
+          <h2 className=" font-[family-name:var(--font-cinzel)] text-center text-3xl md:text-6xl font-black text-[#f5c15c] ">
             Our Sacred Puja Services
           </h2>
 
@@ -524,7 +524,7 @@ export default function Home() {
               viewport={{ once: true }}
               className=" bg-white/5 backdrop-blur-xl rounded-[32px] overflow-hidden border border-white/10 shadow-2xl hover:-translate-y-3 transition duration-500 "
               >
-                <div className="relative h-64">
+                <div className="relative h-44 sm:h-56 md:h-64">
                   <Image
                     src={item.image}
                     alt={item.title}
@@ -583,7 +583,7 @@ export default function Home() {
         </span>
       </div>
 
-      <h2 className="font-[family-name:var(--font-cinzel)] text-6xl font-black text-[#f5c15c] mb-6">
+      <h2 className="font-[family-name:var(--font-cinzel)] text-3xl md:text-6xl font-black text-[#f5c15c] mb-6">
         Astrology Consultation
       </h2>
 
@@ -603,7 +603,7 @@ export default function Home() {
           whileHover={{ y: -12 }}
           className="bg-white/5 backdrop-blur-xl rounded-[32px] overflow-hidden border border-white/10 shadow-2xl"
         >
-          <div className="relative h-64 overflow-hidden">
+          <div className="relative h-44 sm:h-56 md:h-64 overflow-hidden">
             <Image
               src={item.image}
               alt={item.title}
@@ -639,11 +639,11 @@ export default function Home() {
       {/* CTA */}
       <section className="py-20 bg-[#1a0d0d]">
         <div className="max-w-4xl mx-auto bg-gradient-to-r text-white rounded-[30px] p-12 text-center shadow-2xl">
-          <h2 className=" font-[family-name:var(--font-cinzel)] text-center text-6xl font-black text-[#f5c15c] ">
+          <h2 className=" font-[family-name:var(--font-cinzel)] text-center text-3xl md:text-6xl font-black text-[#f5c15c] ">
             Book Your Puja Today - Limited Slots Available
           </h2>
 
-          <p className="text-3xl font-semibold">
+          <p className="text-2xl md:text-3xl font-semibold">
             Turant booking ke liye Call karein: 📞 7746894292
           </p>
         </div>
@@ -652,7 +652,7 @@ export default function Home() {
       {/* How we work */}
       <section className="bg-[#120909] text-white py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className=" font-[family-name:var(--font-cinzel)] text-center text-6xl font-black text-[#f5c15c] ">
+          <h2 className=" font-[family-name:var(--font-cinzel)] text-center text-3xl md:text-6xl font-black text-[#f5c15c] ">
             How We Work
           </h2>
 
@@ -666,7 +666,7 @@ export default function Home() {
                 <FaPrayingHands />
               </div>
 
-              <h3 className="text-4xl font-bold mb-4">
+              <h3 className="font-[family-name:var(--font-cinzel)] text-2xl md:text-4xl font-black text-[#f5c15c] mb-3">
                 1. Select Your Puja
               </h3>
 
@@ -680,7 +680,7 @@ export default function Home() {
                 <FaPhoneAlt />
               </div>
 
-              <h3 className="text-4xl font-bold mb-4">
+              <h3 className="font-[family-name:var(--font-cinzel)] text-2xl md:text-4xl font-black text-[#f5c15c] mb-3">
                 2. Free Consultation
               </h3>
 
@@ -694,7 +694,7 @@ export default function Home() {
                 <FaCalendarCheck />
               </div>
 
-              <h3 className="text-4xl font-bold mb-4">
+              <h3 className="font-[family-name:var(--font-cinzel)] text-2xl md:text-4xl font-black text-[#f5c15c] mb-3">
                 3. Schedule & Book
               </h3>
 
@@ -706,24 +706,24 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-10 text-center mt-24 border-t border-white/20 pt-16">
             <div>
-              <h4 className="text-7xl text-yellow-400 font-black mb-3">
+              <h4 className="font-[family-name:var(--font-cinzel)] text-4xl md:text-7xl text-yellow-400 font-black mb-3">
                 10+
               </h4>
-              <p className="text-2xl font-semibold">YEARS EXPERIENCE</p>
+              <p className="text-xl md:text-2xl font-semibold">YEARS EXPERIENCE</p>
             </div>
 
             <div>
-              <h4 className="text-7xl text-yellow-400 font-black mb-3">
+              <h4 className="font-[family-name:var(--font-cinzel)] text-4xl md:text-7xl text-yellow-400 font-black mb-3">
                 10000+
               </h4>
-              <p className="text-2xl font-semibold">SATISFIED DEVOTEES</p>
+              <p className="text-xl md:text-2xl font-semibold">SATISFIED DEVOTEES</p>
             </div>
 
             <div>
-              <h4 className="text-7xl text-yellow-400 font-black mb-3">
+              <h4 className="font-[family-name:var(--font-cinzel)] text-4xl md:text-7xl text-yellow-400 font-black mb-3">
                 25+
               </h4>
-              <p className="text-2xl font-semibold">TYPES OF PUJAS</p>
+              <p className="text-xl md:text-2xl font-semibold">TYPES OF PUJAS</p>
             </div>
           </div>
         </div>
@@ -732,7 +732,7 @@ export default function Home() {
       {/* Gallery Section */}
 <section id="gallery" className="py-24 bg-[#0b0b0b]">
   <div className="max-w-7xl mx-auto px-6">
-    <h2 className=" font-[family-name:var(--font-cinzel)] text-center text-6xl font-black text-[#f5c15c] ">
+    <h2 className=" font-[family-name:var(--font-cinzel)] text-center text-3xl md:text-6xl font-black text-[#f5c15c] ">
       Puja Photo Gallery
     </h2>
 
@@ -755,7 +755,7 @@ export default function Home() {
       ].map((img, i) => (
         <div
           key={i}
-          className="relative h-72 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition duration-300"
+          className="relative h-44 sm:h-56 md:h-72 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition duration-300"
         >
           <Image
             src={img}
@@ -773,7 +773,7 @@ export default function Home() {
 {/* Reviews Section */}
 <section className="py-24 bg-[#120909]">
   <div className="max-w-7xl mx-auto px-6">
-    <h2 className=" font-[family-name:var(--font-cinzel)] text-center text-6xl font-black text-[#f5c15c] ">
+    <h2 className=" font-[family-name:var(--font-cinzel)] text-center text-3xl md:text-6xl font-black text-[#f5c15c] ">
       Real Google Reviews
     </h2>
 
@@ -803,11 +803,11 @@ export default function Home() {
             ⭐ ⭐ ⭐ ⭐ ⭐
           </div>
 
-          <p className="text-gray-700 text-lg leading-loose mb-8">
+          <p className="text-[#f5c15c] text-lg leading-loose mb-8">
             "{item.review}"
           </p>
 
-          <div className="font-bold text-2xl text-[#f5c15c]">
+          <div className="font-bold text-2xl text-white">
             {item.name}
           </div>
         </div>
@@ -822,7 +822,7 @@ export default function Home() {
     <div className="grid lg:grid-cols-2 gap-16 items-center">
       {/* Left */}
       <div>
-        <h2 className=" font-[family-name:var(--font-cinzel)] text-center text-6xl font-black text-[#f5c15c] ">
+        <h2 className=" font-[family-name:var(--font-cinzel)] text-center text-3xl md:text-6xl font-black text-[#f5c15c] ">
           Contact Information
         </h2>
 
@@ -833,7 +833,7 @@ export default function Home() {
             <div>
               <h4 className="font-bold text-3xl mb-2">Address:</h4>
 
-              <p className="text-gray-700 leading-loose">
+              <p className="text-[#f5c15c] leading-loose">
                 Mangalnath Mandir, Ankpat Marg, Mangalnath Mandir, Agar Rd, Ujjain, Madhya Pradesh 456006
               </p>
             </div>
@@ -849,7 +849,7 @@ export default function Home() {
 
               <a
                 href="tel:+917746894292"
-                className="text-red-600 font-bold text-4xl"
+                className="text-[#f5c15c] font-bold text-4xl"
               >
                 7746894292
               </a>
@@ -862,7 +862,7 @@ export default function Home() {
             <div>
               <h4 className="font-bold text-3xl mb-2">Email:</h4>
 
-              <p className="text-gray-700">
+              <p className="text-[#f5c15c]">
                 pp7746894292@gmail.com
               </p>
             </div>
@@ -899,7 +899,7 @@ export default function Home() {
     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-14">
       {/* Brand */}
       <div>
-        <h2 className="text-4xl font-black text-yellow-400 mb-6">
+        <h2 className="font-[family-name:var(--font-cinzel)] text-2xl md:text-4xl font-black text-[#f5c15c] mb-3">
         ज्योतिष आचार्य पंडित पुराण शर्मा
         </h2>
 
@@ -1050,14 +1050,14 @@ export default function Home() {
       {/* Floating Buttons */}
       <a
         href="#"
-        className="fixed bottom-8 left-6 w-20 h-20 rounded-full bg-gradient-to-r from-[#ff6b00] to-[#f5c15c] text-white flex items-center justify-center text-4xl shadow-2xl z-50"
+        className="fixed bottom-6 left-4 w-14 h-14 md:w-20 md:h-20 rounded-full bg-gradient-to-r from-[#ff6b00] to-[#f5c15c] text-white flex items-center justify-center text-2xl md:text-4xl shadow-2xl z-50"
       >
         <FaPhoneAlt />
       </a>
 
       <a
         href="#"
-        className="fixed bottom-8 right-6 w-20 h-20 rounded-full bg-green-500 text-white flex items-center justify-center text-4xl shadow-2xl z-50"
+        className="fixed bottom-6 right-4 w-14 h-14 md:w-20 md:h-20 rounded-full bg-green-500 text-white flex items-center justify-center text-2xl md:text-4xl shadow-2xl z-50"
       >
         <FaWhatsapp />
       </a>

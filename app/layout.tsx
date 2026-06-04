@@ -32,10 +32,30 @@ export const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Mahakal Puja Ujjain",
+  metadataBase: new URL('https://ujjainpujaseva.in'),
+  title: {
+    default: 'Mahakal Puja Booking in Ujjain | Ujjain Puja Seva',
+    template: '%s | Ujjain Puja Seva',
+  },
   description:
-    "Book Authentic Mahakal Puja, Rudrabhishek, Kaal Sarp Dosh Puja & Astrology Services in Ujjain.",
-};
+    'Book Rudrabhishek, Kaal Sarp Dosh Puja, Mangal Dosh Puja, Mahamrityunjay Jaap and Pandit services in Ujjain.',
+  keywords: [
+    'Mahakal Puja Ujjain',
+    'Rudrabhishek Puja Ujjain',
+    'Kaal Sarp Dosh Puja Ujjain',
+    'Mangal Dosh Puja Ujjain',
+    'Pandit Booking Ujjain',
+    'Mangalnath Mandir Puja',
+  ],
+  openGraph: {
+    title: 'Mahakal Puja Booking in Ujjain',
+    description:
+      'Book authentic Vedic Puja and Pandit services in Ujjain.',
+    url: 'https://ujjainpujaseva.in',
+    siteName: 'Ujjain Puja Seva',
+    type: 'website',
+  },
+}
 
 export default function RootLayout({
   children,
