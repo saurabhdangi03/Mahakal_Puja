@@ -76,13 +76,8 @@ export default function RootLayout({
       `}
     >
       <head>
-        <Script
-          id="adsense-verification"
-          async
-          strategy="afterInteractive"
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6021389420924262"
-          crossOrigin="anonymous"
-        />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6021389420924262"
+     crossorigin="anonymous"></script>
       </head>
 
       <body
